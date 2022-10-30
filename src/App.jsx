@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Rechazado from './Rechazados';
 import Aceptado from './Aceptados';
+import Candidado from './Candidado';
 
 function App() {
 
@@ -127,27 +128,24 @@ function App() {
 
       </div>
 
-      <div className="candidato">
+      <div className='candidato'>
 
         <h1>Candidatos</h1>
-
-        {cargando ? <h2>Cargando...</h2> : 
-        
+        {cargando ? <h2> Cargando...</h2> :
+          
           (
+            
             <>
-              <img src={perritos.message} />
 
-              <h2>{perritos.message.substring(30, 36)}</h2>
-      
+              <Candidado perro={perritos} />
+
               <br/>
-      
               <button onClick={() => Rechazados()}>Rechazar</button>
               <button onClick={() => Aceptados()}>Aceptar</button>
             </>
           )
 
         }
-        
       </div>
 
       <div className="dog">

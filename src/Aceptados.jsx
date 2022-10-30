@@ -8,7 +8,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 const Aceptados = ({perro, funcion = null}) => {
   return (
     
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ maxWidth: 400, ml: 13, mt: 5}}>
 
     <CardActionArea>
 
@@ -21,7 +21,7 @@ const Aceptados = ({perro, funcion = null}) => {
       />
 
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h3" component="div">
           {perro.message.substring(30, 36)}
         </Typography>
       </CardContent>
@@ -29,7 +29,7 @@ const Aceptados = ({perro, funcion = null}) => {
     </CardActionArea>
 
     <CardActions>
-      <Button onClick={() => funcion(perro)}>
+      <Button variant="outlined" color="error" onClick={() => funcion(perro)}>
         Arrepentirse
       </Button>
     </CardActions>

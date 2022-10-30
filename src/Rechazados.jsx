@@ -9,19 +9,20 @@ const Rechazados = ({perro, funcion = null}) => {
 
   return (
 
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ maxWidth: 400, ml: 13, mt: 5 }}>
 
       <CardActionArea>
 
         <CardMedia
           component="img"
+          width="400"
           height="300"
           image={perro.message}
           alt="perrito"
         />
 
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h3" component="div">
             {perro.message.substring(30, 36)}
           </Typography>
         </CardContent>
@@ -29,7 +30,7 @@ const Rechazados = ({perro, funcion = null}) => {
       </CardActionArea>
 
       <CardActions>
-        <Button onClick={() => funcion(perro)}>
+        <Button variant="outlined" color="success" onClick={() => funcion(perro)}>
           Otra oportunidad
         </Button>
       </CardActions>

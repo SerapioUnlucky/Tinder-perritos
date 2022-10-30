@@ -1,5 +1,5 @@
 body{
-  background-color: #242961;
+  background-image: url("/public/background.png");
 }
 
 .tinder{
@@ -9,20 +9,14 @@ body{
   gap: 1rem;
 }
 
+img{
+  width: 300px;
+  height: 400px;
+}
+
 .tinder h1{
   font-family: 'Times New Roman', Times, serif;
   font-size: 3rem;
-}
-
-.candidato h2{
-  font-size: 2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.candidato img{
-  width: 20rem;
-  height: 15rem;
-  border-radius: 4rem;
 }
 
 .candidato button:last-child{
@@ -47,9 +41,3 @@ body{
   color: black;
 }
 
-.tinder .dog{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
