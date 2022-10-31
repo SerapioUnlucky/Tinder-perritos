@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Rechazado from './Rechazados';
 import Aceptado from './Aceptados';
-import Candidado from './Candidado';
+import Candidato from './Candidato';
 
 function App() {
 
@@ -136,7 +136,7 @@ function App() {
           (
             
             <>
-              <Candidado perro={perritos} />
+              <Candidato perro={perritos} />
 
               <br/>
               <button onClick={() => Rechazados()}>Rechazar</button>

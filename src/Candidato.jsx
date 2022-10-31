@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 
-const Candidado = ({perro}) => {
+const Candidato = ({perro}) => {
 
 const path = perro.message.split("/");
 
@@ -30,4 +30,4 @@ const path = perro.message.split("/");
 
 }
 
-export default Candidado;
+export default Candidato;
