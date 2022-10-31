@@ -7,6 +7,8 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 const Rechazados = ({perro, funcion = null}) => {
 
+  const path = perro.message.split("/");
+
   return (
 
     <Card sx={{ maxWidth: 400, ml: 13, mt: 5 }}>
@@ -23,7 +25,7 @@ const Rechazados = ({perro, funcion = null}) => {
 
         <CardContent>
           <Typography gutterBottom variant="h3" component="div">
-            {perro.message.substring(30, 36)}
+            {path[4]}
           </Typography>
         </CardContent>
 

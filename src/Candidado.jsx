@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 
 const Candidado = ({perro}) => {
 
+const path = perro.message.split("/");
 
     return (
 
@@ -21,7 +22,7 @@ const Candidado = ({perro}) => {
 
             <CardContent>
                 <Typography gutterBottom variant="h3" component="div">
-                    {perro.message.substring(30, 36)}
+                    {path[4]}
                 </Typography>
             </CardContent>
         </Card>

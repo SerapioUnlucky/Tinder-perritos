@@ -136,7 +136,6 @@ function App() {
           (
             
             <>
-
               <Candidado perro={perritos} />
 
               <br/>
